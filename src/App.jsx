@@ -4,12 +4,13 @@ import GlobalStyle from "./components/globalStyles";
 import MainContainer from "./components/Content";
 import { useEffect, useState } from "react";
 
-export const BASE_URL = import.meta.env.BASE_URL;
+export const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const App = () => {
   const [foods, setFoods] = useState([]);
   const [filterFood, setFilterFood] = useState([]);
   const [value, setValue] = useState("");
+  console.log(BASE_URL);
 
   useEffect(() => {
     async function fetchData() {
