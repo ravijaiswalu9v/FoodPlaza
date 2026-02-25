@@ -10,7 +10,6 @@ const App = () => {
   const [foods, setFoods] = useState([]);
   const [filterFood, setFilterFood] = useState([]);
   const [value, setValue] = useState("");
-  console.log(BASE_URL);
 
   useEffect(() => {
     async function fetchData() {
