@@ -4,7 +4,7 @@ import GlobalStyle from "./components/globalStyles";
 import MainContainer from "./components/Content";
 import { useEffect, useState } from "react";
 
-export const BASE_URL = "http://localhost:9000";
+export const BASE_URL = import.meta.env.BASE_URL;
 
 const App = () => {
   const [foods, setFoods] = useState([]);
