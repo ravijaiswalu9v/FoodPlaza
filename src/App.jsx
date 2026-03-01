@@ -15,7 +15,7 @@ const App = () => {
     async function fetchData() {
       try {
         console.log("Effect run");
-        const response = await fetch(BASE_URL);
+        const response = await fetch(BASE_URL + "/api/foods");
         const data = await response.json();
         if (data) {
           setFoods(data);
